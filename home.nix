@@ -1,0 +1,1 @@
+/Users/seilert/.config/nixpkgs/home.nix
