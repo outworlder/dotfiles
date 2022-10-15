@@ -37,6 +37,8 @@ in {
     openmsx
     logseq
     spotify
+    chicken
+    simple-scan
   ];
   home.file.".emacs.d/init.el".text = ''
       (load "default.el")
@@ -71,7 +73,7 @@ in {
   programs.git = {
     enable = true;
     userName = "Stephen Eilert";
-      userEmail= "stephen.eilert@hpe.com";
+      userEmail= "contact@stepheneilert.com";
   };
 
   programs.go = {
@@ -86,6 +88,7 @@ in {
     shellAliases = {
       ll = "ls -l";
       update = "sudo nixos-rebuild switch";
+      emacs = "XLIB_SKIP_ARGB_VISUALS=1 emacs";
     };
     initExtra = ''
       export EDITOR=emacsclient
